@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
     <title>ToDo App</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <h1>ToDo App</h1>
-        <label for="input">What ToDo?</label>
-        <div class="input">
-            <input type="text" placeholder="ToDo">
-            <a href=""><i class="fas fa-plus-circle"></i></a>
-        </div>
-        <hr>
-    <div class="todos">
-        <div class="todo-container">
-            <div class="todo-single">
-                <p>Clean Bathroom</p>
-                <div class="icons">
-                    <i class="fas fa-pen"></i>
-                    <i class="far fa-trash-alt"></i>
+      <h1>ToDo App</h1>
+      <label for="input">What ToDo?</label>
+      <div class="input">
+        <input type="text" placeholder="ToDo" id="todoInput" />
+        <a href="" id="todoButton"><i class="fas fa-plus-circle"></i></a>
+      </div>
+      <hr />
+      <div class="todos" id="todoContainer">
+        <!-- <div class="todo-container">
+                <div class="todo-single">
+                    <p>Clean Bathroom</p>
+                    <div class="icons">
+                        <i class="fas fa-pen"></i>
+                        <i class="far fa-trash-alt"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="todo-container">
-            <div class="todo-single">
-                <p>Wash Car</p>
-                <div class="icons">
-                    <i class="fas fa-pen"></i>
-                    <i class="far fa-trash-alt"></i>
+            <div class="todo-container">
+                <div class="todo-single">
+                    <p>Wash Car</p>
+                    <div class="icons">
+                        <i class="fas fa-pen"></i>
+                        <i class="far fa-trash-alt"></i>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div> -->
+      </div>
     </div>
-    </div>
-</body>
+  </body>
 </html>

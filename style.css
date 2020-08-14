@@ -1,98 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family:'Montserrat', sans-serif;
-    font-size: 16px;
-    background:linear-gradient(45deg,rgb(133,255,189),rgb(255,251,125));
-    color: white;
-    background-repeat: no-repeat;
-    height: 100vh;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background: linear-gradient(45deg, rgb(133, 255, 189), rgb(255, 251, 125));
+  color: white;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.wrapper h1{
-    text-shadow: 0 0 3px #00853d;
-    font-size: 3rem;
-    margin-top: 60px;
+.wrapper h1 {
+  text-shadow: 0 0 3px #00853d;
+  font-size: 3rem;
+  margin-top: 60px;
 }
-.wrapper label{
-    color: #00853d;
-    font-weight: 600;
-    margin-top: 30px;
+.wrapper label {
+  color: #00853d;
+  font-weight: 600;
+  margin-top: 30px;
 }
-.wrapper .input{
-    position: relative;
+.wrapper .input {
+  position: relative;
 }
-.wrapper input{
-    border: 0;
-    padding: 10px 15px;
-    margin-top: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #00853d;
-    width: 400px;
+.wrapper input {
+  border: 0;
+  padding: 10px 15px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00853d;
+  width: 400px;
 }
-.wrapper input:focus{
-    outline: 0;
+.wrapper input:focus {
+  outline: 0;
 }
-.wrapper input::placeholder{
-    color: #00853d;    
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+.wrapper input::placeholder {
+  color: #00853d;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
 }
-.wrapper a{
-    position: absolute;
-    top: 60%;
-    right: 5%;
-    color: #00853d;
-    transition: 0.5s ease;
+.wrapper a {
+  position: absolute;
+  top: 60%;
+  right: 5%;
+  color: #00853d;
+  transition: 0.5s ease;
 }
-.wrapper a:hover{
-    transform: scale(1.1);
+.wrapper a:hover {
+  transform: scale(1.1);
 }
-.wrapper hr{
-    height: 4px;
-    width: 450px;
-    background: #00853d;
-    margin-top: 30px;
-    border: 0;
-    border-radius: 20px;
+.wrapper hr {
+  height: 4px;
+  width: 450px;
+  background: #00853d;
+  margin-top: 30px;
+  border: 0;
+  border-radius: 20px;
 }
-.todos{
-    margin-top: 40px;
+.todos {
+  margin-top: 40px;
 }
-.todo-container{
-    display: flex;
-    width: 400px;
-    background: white;
-    color: #00853d;
-    align-items: center;
-    position: relative;
-    margin-top: 12px;
-    border-radius: 10px;
-    transition: 0.5s ease;
+.todo-container {
+  display: flex;
+  width: 400px;
+  background: white;
+  color: #00853d;
+  align-items: center;
+  position: relative;
+  margin-top: 12px;
+  border-radius: 10px;
+  transition: 0.5s ease;
 }
-.todo-container:hover{
-    box-shadow: 0 0 10px #00853d;
+.todo-container:hover {
+  box-shadow: 0 0 10px #00853d;
 }
-.todo-single{
-    display: flex;
-    padding: 10px 20px;
-    
+.todo-single {
+  display: flex;
+  padding: 10px 20px;
 }
-.todo-single .icons{
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
+.todo-single .icons {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
-.todo-single .icons i:hover{
-    transform: scale(1.1);
-    cursor: pointer;
+.todo-single .icons i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@media (max-width:768px){
+    body{
+        background:linear-gradient(45deg, rgb(133, 255, 189), rgb(255, 251, 125));
+    }
+    .wrapper input{
+        width: 250px;
+    }
+    .wrapper hr{
+        width: 250px;
+    }
+    .todo-container{
+        width: 300px;
+    }
 }
