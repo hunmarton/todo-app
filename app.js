@@ -82,6 +82,15 @@ window.addEventListener("DOMContentLoaded", () => {
       createHtml();  
     }
   });
+  document.addEventListener("keyup", (e) => {
+    if(e.keyCode === 13){
+
+    if(input.value != ''){
+      setLocalStorage(getInputValue());  
+      createHtml();  
+    }
+  }
+  });
   container.addEventListener('click', (e)=>{
     if(e.target.classList.contains('fa-trash-alt')){
         removeItem(e);
