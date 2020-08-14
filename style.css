@@ -7,7 +7,9 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  background: linear-gradient(45deg, rgb(133, 255, 189), rgb(255, 251, 125));
+  background: linear-gradient(45deg, rgba(133, 255, 189,0.7), rgba(255, 251, 125,0.7)),url(bg.png);
+  background-size: cover;
+  background-position: center;
   color: white;
   background-repeat: no-repeat;
   height: 100vh;
